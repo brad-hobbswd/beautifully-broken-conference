@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+<title>404 | Beautifully Broken Women's Conference</title>
+
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Cinzel:wght@400;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+font-family:Poppins,sans-serif;
+background:#15151c;
+color:#fff;
+
+min-height:100vh;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+padding:30px;
+
+overflow:hidden;
+position:relative;
+}
+
+.hero-bg{
+position:fixed;
+inset:0;
+
+background:
+linear-gradient(
+rgba(12,8,18,.76),
+rgba(12,8,18,.92)
+),
+url("hero-banner.jpg");
+
+background-size:cover;
+background-position:center;
+
+z-index:-2;
+}
+
+.glow{
+position:fixed;
+inset:0;
+
+background:
+radial-gradient(
+circle at top,
+rgba(212,164,87,.16),
+transparent 60%);
+
+z-index:-1;
+}
+
+.error-content{
+
+max-width:760px;
+
+padding:55px 40px;
+
+text-align:center;
+
+background:rgba(255,255,255,.05);
+
+backdrop-filter:blur(20px);
+
+border-radius:32px;
+
+border:1px solid rgba(255,255,255,.08);
+
+box-shadow:
+0 20px 60px rgba(0,0,0,.35);
+
+}
+
+.error-number{
+
+font-family:Cinzel;
+
+font-size:120px;
+
+line-height:1;
+
+color:#d4a457;
+
+margin-bottom:20px;
+
+text-shadow:
+0 0 30px rgba(212,164,87,.25);
+
+}
+
+.error-script{
+
+font-family:Great Vibes,cursive;
+
+font-size:52px;
+
+color:#f6d8b7;
+
+margin-bottom:20px;
+}
+
+.error-content h1{
+
+font-family:Cinzel;
+
+font-size:32px;
+
+margin-bottom:22px;
+
+color:#f3d49a;
+}
+
+.error-content p{
+
+font-size:19px;
+
+line-height:1.9;
+
+color:#ddd;
+
+margin-bottom:35px;
+}
+
+.btn{
+
+display:inline-block;
+
+padding:16px 38px;
+
+border-radius:50px;
+
+text-decoration:none;
+
+font-weight:600;
+
+color:white;
+
+background:
+linear-gradient(
+45deg,
+#7f5cff,
+#d4a457
+);
+
+transition:.4s;
+}
+
+.btn:hover{
+
+transform:translateY(-5px);
+
+}
+
+.divider{
+width:140px;
+height:1px;
+
+margin:28px auto;
+
+background:
+linear-gradient(
+to right,
+transparent,
+rgba(212,164,87,.8),
+transparent
+);
+}
+
+@media(max-width:700px){
+
+.error-content{
+padding:40px 25px;
+}
+
+.error-number{
+font-size:90px;
+}
+
+.error-script{
+font-size:40px;
+}
+
+.error-content h1{
+font-size:25px;
+}
+
+.error-content p{
+font-size:17px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="hero-bg"></div>
+<div class="glow"></div>
+
+<div class="error-content">
+
+<div class="error-number">
+404
+</div>
+
+<div class="error-script">
+Beautifully Broken
+</div>
+
+<div class="divider"></div>
+
+<h1>
+Looks like you wandered off the conference path
+</h1>
+
+<p>
+
+This page could not be found.
+
+<br><br>
+
+Maybe you were searching for a Women's Conference prayer page or perhaps a Men's Conference gathering.
+
+Wrong turns happen from time to time. Grace helps guide us back in the right direction.
+
+A path home is waiting below.
+
+</p>
+
+<a href="index.html" class="btn">
+Return Home
+</a>
+
+</div>
+
+</body>
+</html>
