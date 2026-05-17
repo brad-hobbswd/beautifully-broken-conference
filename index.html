@@ -518,12 +518,26 @@ padding:70px 22px;
 }
 
 .cards{
+grid-template-columns:repeat(2,1fr);
+
+max-width:760px;
+}
+
+}
+
+  
+.card{
+padding:25px;
+}
+
+@media(max-width:600px){
+
+.cards{
 grid-template-columns:1fr;
+
 max-width:420px;
 }
 
-.card{
-padding:25px;
 }
   
 </style>
