@@ -254,8 +254,18 @@ transition:.4s;
 overflow:hidden;
 }
 
-.card:hover{
-transform:translateY(-8px);
+.card{
+background:rgba(255,255,255,.05);
+backdrop-filter:blur(18px);
+
+padding:30px 24px 24px;
+
+border-radius:28px;
+border:1px solid rgba(255,255,255,.08);
+
+text-align:center;
+
+overflow:hidden;
 }
 
 .card img{
@@ -267,20 +277,25 @@ border:4px solid #d4a457;
 
 margin-bottom:18px;
 
-object-fit:cover;
-
 display:block;
 margin-left:auto;
 margin-right:auto;
+
+object-fit:cover;
+overflow:hidden;
 }
 
 .speaker-zoom{
+width:125px;
+height:125px;
+
 object-fit:cover;
 
-object-position:center 18%;
+object-position:center 12%;
 
-clip-path:circle(50%);
-transform:scale(1.85);
+transform:scale(1.75);
+
+border-radius:50%;
 }
 
 .card p{
