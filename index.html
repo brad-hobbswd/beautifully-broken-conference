@@ -230,28 +230,34 @@ color:#ddd;
 }
 
 .cards{
-max-width:780px;
+display:grid;
+
+grid-template-columns:repeat(2,minmax(320px,1fr));
+
+max-width:920px;
+
 margin:45px auto 0;
 
-display:grid;
-grid-template-columns:repeat(2,1fr);
-
-gap:22px;
+gap:24px;
 }
 
 .card{
 background:rgba(255,255,255,.05);
 backdrop-filter:blur(18px);
 
-padding:24px;
+padding:30px 24px;
 
 border-radius:28px;
 border:1px solid rgba(255,255,255,.08);
 
 text-align:center;
-transition:.4s;
 
+transition:.4s;
 overflow:hidden;
+}
+
+.card:hover{
+transform:translateY(-8px);
 }
 
 .card img{
