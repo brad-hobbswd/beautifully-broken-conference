@@ -393,8 +393,80 @@ max-width:420px;
 padding:25px;
 }
 
+
+#location .cards{
+max-width:900px;
+margin-top:25px;
 }
 
+#location .card{
+min-height:auto;
+}
+
+.speaker-card{
+cursor:pointer;
+}
+
+.popup-overlay{
+position:fixed;
+inset:0;
+
+background:rgba(0,0,0,.82);
+
+display:none;
+
+justify-content:center;
+align-items:center;
+
+padding:25px;
+
+z-index:9999;
+}
+
+.popup-content{
+max-width:750px;
+max-height:90vh;
+
+overflow-y:auto;
+
+background:#1c1c24;
+
+padding:45px;
+
+border-radius:30px;
+
+border:1px solid rgba(212,164,87,.3);
+
+text-align:center;
+}
+
+.popup-photo{
+width:160px;
+height:160px;
+
+border-radius:50%;
+
+border:5px solid #d4a457;
+
+margin-bottom:25px;
+
+object-fit:cover;
+}
+
+.close-popup{
+position:absolute;
+
+right:30px;
+
+top:25px;
+
+font-size:40px;
+
+cursor:pointer;
+
+color:#d4a457;
+}
+  
 </style>
 </head>
 
@@ -482,27 +554,33 @@ Meet Your Hosts & Speakers
 
 <div class="cards">
 
-<div class="card">
+<div class="card speaker-card" onclick="openMichelle()">
+
 <img class="speaker-zoom"
-src="694699750_2879439775731760_7284637011766066962_n.jpg">
+src="att.EGRXTaNt9t1thKff_lRzgFeGiUt3q8-zVCUYuHfh_8g.jpeg">
 
 <h3>Michelle Blankenship</h3>
 <p>Friday Evening Speaker</p>
+
 </div>
 
-<div class="card">
+<div class="card speaker-card" onclick="openTrinity()">
+
 <img class="speaker-zoom"
-src="694537609_2879422962400108_5308888485260406235_n.jpg">
+src="att.JemDHWRSIsAfsMJHrxQulboQDNBamHWB4xGCzUxvuHI.jpeg">
 
 <h3>Trinity Blankenship</h3>
 <p>Saturday Breakout Session</p>
+
 </div>
 
-<div class="card">
+<div class="card speaker-card" onclick="openMelissa()">
+
 <img src="att.TjNIx5rC6v1X_4VDd-Ky6Q9S1m-rhakzYptnaKLSFrU.jpeg">
 
 <h3>Melissa Entrekin</h3>
 <p>Saturday Evening Speaker</p>
+
 </div>
 
 <div class="card">
@@ -582,6 +660,75 @@ Lexington, Kentucky
 
 Reservations: 859.699.8108
 
+<br><br><br>
+
+<h3 style="
+color:#d4a457;
+font-family:Cinzel;
+margin-bottom:20px;
+">
+Nearby Hotel Accommodations
+</h3>
+
+</div>
+
+<div class="cards" style="
+max-width:900px;
+margin-top:25px;
+">
+
+<div class="card">
+
+<h3>
+Staybridge Suites Lexington S Medical Ctr Area by IHG
+</h3>
+
+<p>
+209 Ruccio Way<br>
+Lexington, KY 40503
+</p>
+
+<p>
+Comfortable suites located near Bethesda Tabernacle with extended stay amenities.
+</p>
+
+<a
+href="https://www.booking.com/hotel/us/staybridge-suites-lexington-s-medical-ctr-area-an-ihg.html"
+target="_blank"
+class="btn">
+
+View Hotel
+
+</a>
+
+</div>
+
+<div class="card">
+
+<h3>
+Home2 Suites by Hilton Lexington University / Medical Center
+</h3>
+
+<p>
+126 East Lowry Lane<br>
+Lexington, KY 40503
+</p>
+
+<p>
+Convenient location near shopping, dining, and the conference venue.
+</p>
+
+<a
+href="https://www.booking.com/hotel/us/home2-suites-by-hilton-lexington-university-medical-center.html"
+target="_blank"
+class="btn">
+
+View Hotel
+
+</a>
+
+</div>
+
 </div>
 
 </section>
@@ -615,6 +762,330 @@ Brad Hobbs Web Design
 </div>
 
 </footer>
+<div id="michellePopup" class="popup-overlay">
 
+<div class="popup-content">
+
+<span class="close-popup" onclick="closeMichelle()">
+×
+</span>
+
+<img
+src="att.EGRXTaNt9t1thKff_lRzgFeGiUt3q8-zVCUYuHfh_8g.jpeg"
+class="popup-photo"
+>
+
+<h2>
+Michelle Blankenship
+</h2>
+
+<h4>
+Friday Evening Speaker
+</h4>
+
+<p>
+
+Michelle Blankenship will be the Friday evening speaker.
+
+<br><br>
+
+Michelle is 56 years old and was saved at the age of 8 and filled with the Holy Ghost at age 12. Originally from Louisville, Kentucky, she began traveling and singing with her father at only 10 years old.
+
+<br><br>
+
+Michelle has spent approximately 43 years in ministry. Within recent years, God has been opening new doors and leading her into deeper waters, allowing her to step forward into new areas of calling and purpose.
+
+<br><br>
+
+She is married to her best friend, has two biological children, and a beautiful granddaughter.
+
+<br><br>
+
+Throughout life Michelle has experienced moments where she turned away, yet discovered the unwavering faithfulness of Jesus, whose love never abandoned her.
+
+<br><br>
+
+Her desire remains simple and powerful. To become more like Jesus and to love like Jesus.
+
+<br><br>
+
+One hope remains within her heart:
+
+"I want people to look back one day and say she loved like Him."
+
+</p>
+
+</div>
+
+</div>
+
+  <div id="trinityPopup" class="popup-overlay">
+
+<div class="popup-content">
+
+<span class="close-popup" onclick="closeTrinity()">
+×
+</span>
+
+<img
+src="att.JemDHWRSIsAfsMJHrxQulboQDNBamHWB4xGCzUxvuHI.jpeg"
+class="popup-photo"
+>
+
+<h2>
+Trinity Blankenship
+</h2>
+
+<h4>
+Saturday Morning Breakout Speaker
+</h4>
+
+<p>
+
+Meet Trinity Blankenship, our Saturday morning breakout speaker.
+
+<br><br>
+
+Trinity has spent 53 years in church and more than 33 years in ministry. Baptized in April 1979 and filled with the Holy Ghost at age 17, her journey began in Charleston, West Virginia where her grandfather pastored for 37 years.
+
+<br><br>
+
+Trinity later entered the United States Navy and experienced a season away from God. During a deeply traumatic period, the Lord brought restoration and rescue. Through every storm, God remained her rock and carried her through difficult seasons.
+
+<br><br>
+
+She served as a minister in Charleston, West Virginia and was originally ordained through Pentecostal Affirming Ministries.
+
+<br><br>
+
+Her ministry journey continued as Assistant Pastor in Johnson City, Tennessee for four years, later serving as Pastor in Lexington, Kentucky.
+
+<br><br>
+
+Today she ministers within the unhoused community and manages a food pantry through Bethesda Tabernacle.
+
+<br><br>
+
+Her calling began very early in life. At only eighteen months old she suffered severe convulsions and nearly died. Her grandparents placed her on the altar while elders prayed over her life.
+
+<br><br>
+
+God completely healed her.
+
+<br><br>
+
+For 52 years there has not been another seizure.
+
+<br><br>
+
+God later gave Trinity a gift of healing. Following military service she became a Massage Therapist and served for 23 years, helping many people and giving God glory for using her hands to bring comfort and healing.
+
+<br><br>
+
+Her journey has carried both joy and heartbreak. Within the past year she has witnessed God restoring what the locusts stole and beginning a new chapter.
+
+<br><br>
+
+Her testimony remains simple:
+
+"I may not understand the road before me, but I trust God to open doors no man can shut."
+
+<br><br>
+
+God is faithful to His children and Trinity is honored to share what God has placed in her heart for Beautifully Broken 2026.
+
+  God is faithful to His children and Trinity is honored to share what God has placed in her heart for Beautifully Broken 2026.
+
+<br><br>
+
+<hr style="
+margin:35px 0;
+border:none;
+border-top:1px solid rgba(255,255,255,.12);
+">
+
+<h3 style="
+color:#d4a457;
+font-family:Cinzel;
+margin-bottom:18px;
+">
+Featuring Robin Lynn Spears
+</h3>
+
+<p>
+
+Robin Lynn Spears will be joining Trinity Blankenship during Saturday's breakout session.
+
+<br><br>
+
+Robin shares a powerful testimony of redemption and restoration.
+
+<br><br>
+
+For much of her life she did not believe in God and battled addiction for many years.
+
+<br><br>
+
+Everything changed in January of 2022 when her husband attempted to take his life. During one of the darkest moments of her journey, Robin encountered hope and began following Jesus.
+
+<br><br>
+
+Today Robin joyfully shares a transformed life and celebrates being four years free from addiction.
+
+<br><br>
+
+Her story stands as a testimony that Jesus still restores, heals, and gives new beginnings.
+
+</p>
+
+</div>
+
+</div>
+
+  <div id="melissaPopup" class="popup-overlay">
+
+<div class="popup-content">
+
+<span class="close-popup" onclick="closeMelissa()">
+×
+</span>
+
+<img
+src="att.TjNIx5rC6v1X_4VDd-Ky6Q9S1m-rhakzYptnaKLSFrU.jpeg"
+class="popup-photo"
+>
+
+<h2>
+Melissa Entrekin
+</h2>
+
+<h4>
+Saturday Evening Speaker
+</h4>
+
+<p>
+
+Meet Melissa Entrekin, our guest speaker for Saturday evening.
+
+<br><br>
+
+Melissa was saved at ten years old on a Wednesday night, a moment she says she will never forget. God was dealing with her heart and she actually tried to leave the church. When she reached for the doorknob, she turned around and literally ran to the altar.
+
+<br><br>
+
+Over the years Melissa has had the privilege of teaching Sunday school, leading a youth bus ministry, and preaching the Gospel.
+
+<br><br>
+
+At age eighteen God called her to preach and since that day He has continually stirred her heart to travel, minister, and tell others about His goodness and faithfulness.
+
+<br><br>
+
+Melissa shares her testimony with honesty. Life brought seasons where she wandered and ran from God, yet through every season God never stopped being faithful.
+
+<br><br>
+
+She is thankful for a Savior who leaves the ninety nine for the one.
+
+<br><br>
+
+Melissa believes Jesus Christ is the only way to Heaven and believes anyone can find a home in Him by receiving His love and grace.
+
+<br><br>
+
+She loves Southern Gospel music, old red back hymns, revivals, and Holy Spirit filled services.
+
+<br><br>
+
+Melissa believes God uses willing people and that nobody needs to feel qualified before answering His call.
+
+<br><br>
+
+God has blessed Melissa with a beautiful wife, an amazing adopted son named Jabarrie, and precious foster babies.
+
+<br><br>
+
+Melissa shares one simple truth:
+
+"Even through all my failures, God has never failed me once."
+
+</p>
+
+</div>
+
+</div>
+
+  <script>
+
+function openMichelle(){
+document.getElementById(
+"michellePopup"
+).style.display="flex";
+}
+
+function closeMichelle(){
+document.getElementById(
+"michellePopup"
+).style.display="none";
+}
+
+function openTrinity(){
+document.getElementById(
+"trinityPopup"
+).style.display="flex";
+}
+
+function closeTrinity(){
+document.getElementById(
+"trinityPopup"
+).style.display="none";
+}
+
+function openMelissa(){
+document.getElementById(
+"melissaPopup"
+).style.display="flex";
+}
+
+function closeMelissa(){
+document.getElementById(
+"melissaPopup"
+).style.display="none";
+}
+
+window.onclick=function(e){
+
+let michelle=
+document.getElementById(
+"michellePopup"
+);
+
+let trinity=
+document.getElementById(
+"trinityPopup"
+);
+
+let melissa=
+document.getElementById(
+"melissaPopup"
+);
+
+if(e.target===michelle){
+michelle.style.display="none";
+}
+
+if(e.target===trinity){
+trinity.style.display="none";
+}
+
+if(e.target===melissa){
+melissa.style.display="none";
+}
+
+}
+
+</script>
+
+  
 </body>
 </html>
