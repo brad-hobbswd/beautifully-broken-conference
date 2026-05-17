@@ -446,6 +446,42 @@ cursor:pointer;
 color:#d4a457;
 }
 
+  .speaker-tip{
+text-align:center;
+
+margin:0 auto 28px;
+
+font-size:16px;
+
+color:#d8c7a0;
+
+opacity:.95;
+}
+
+.hand{
+font-size:34px;
+
+margin-bottom:8px;
+
+animation:pointBounce 1.5s infinite;
+}
+
+@keyframes pointBounce{
+
+0%{
+transform:translateY(0);
+}
+
+50%{
+transform:translateY(10px);
+}
+
+100%{
+transform:translateY(0);
+}
+
+}
+
 @media(max-width:900px){
 
 nav{
@@ -489,9 +525,6 @@ max-width:420px;
 .card{
 padding:25px;
 }
-
-
-
   
 </style>
 </head>
@@ -577,7 +610,15 @@ Beautifully Broken creates space for women to gather, worship, heal, connect, la
 <h2 class="title">
 Meet Your Hosts & Speakers
 </h2>
+<div class="speaker-tip">
 
+<div class="hand">
+👇
+</div>
+
+Tap or click a speaker card to learn more about each presenter
+
+</div>
 <div class="cards">
 
 <div class="card speaker-card" onclick="openMichelle()">
